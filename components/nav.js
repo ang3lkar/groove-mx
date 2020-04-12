@@ -19,13 +19,18 @@ const Nav = () => (
 
       <style jsx>{`
       .nav {
-        clear: both;
+
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: 100px 100px auto;
+        padding: 1.5rem;
+        margin: 0;
       }
 
       .nav li {
-        float: left;
         list-style-type: none;
-        margin: 10px;
       }
     `}</style>
 

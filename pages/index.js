@@ -1,14 +1,59 @@
 import React from 'react'
-import Link from 'next/link'
+import playlists from '../playlists'
 import Layout from '../components/layout'
 import PlaylistThumbnail from './playlist-thumbnail'
 
-const Home = (props) => (
+const featured1 = playlists["supermassive-song-hole"]
+const featured2 = playlists["uplifting-rock"]
+const featured3 = playlists["the-whiskey-project"]
+
+const Home = () => (
+
   <Layout>
     <div className='main'>
 
       <div className="featured">
-        <PlaylistThumbnail></PlaylistThumbnail>
+        <PlaylistThumbnail
+          id={featured1.route}
+          title={featured1.title}
+          subtitle={featured1.subtitle}
+          backgroundImage={featured1.image}
+        ></PlaylistThumbnail>
+
+        <PlaylistThumbnail
+          id={featured2.route}
+          title={featured2.title}
+          subtitle={featured2.subtitle}
+          backgroundImage={featured2.image}
+         ></PlaylistThumbnail>
+
+        <PlaylistThumbnail
+          id={featured3.route}
+          title={featured3.title}
+          subtitle={featured3.subtitle}
+          backgroundImage={featured3.image}
+         ></PlaylistThumbnail>
+
+        <PlaylistThumbnail
+          id={featured1.route}
+          title={featured1.title}
+          subtitle={featured1.subtitle}
+          backgroundImage={featured1.image}
+        ></PlaylistThumbnail>
+
+        <PlaylistThumbnail
+          id={featured2.route}
+          title={featured2.title}
+          subtitle={featured2.subtitle}
+          backgroundImage={featured2.image}
+         ></PlaylistThumbnail>
+
+        <PlaylistThumbnail
+          id={featured3.route}
+          title={featured3.title}
+          subtitle={featured3.subtitle}
+          backgroundImage={featured3.image}
+         ></PlaylistThumbnail>
       </div>
 
     </div>
@@ -21,7 +66,9 @@ const Home = (props) => (
       }
 
       .featured {
-        clear: both;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
       }
       `}</style>
   </Layout>

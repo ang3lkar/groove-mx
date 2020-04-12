@@ -1,11 +1,12 @@
 import React from 'react'
 import Nav from './nav'
 import Footer from './footer'
+import Header from './header'
+
 
 const Layout = (props) => (
-  <div className="main">
-    <div className="logo">Logo</div>
-    <div className="subtitle">Curated playlists for the music bourgeoisie</div>
+  <div className="wrapper">
+    <Header></Header>
 
     <Nav></Nav>
 
@@ -14,9 +15,13 @@ const Layout = (props) => (
     <Footer></Footer>
 
     <style jsx>{`
-      h1,
-      a {
-        font-family: 'Arial';
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       }
 
       ul {
@@ -37,20 +42,11 @@ const Layout = (props) => (
         opacity: 0.6;
       }
 
-      .main {
-        width: 700px;
-        margin: auto;
-      }
-
-      .logo {
-        width: 100px;
-        height: 80px;
-        float: left;
-      }
-
-      .subtitle {
-        width: 90%
-        float: right;
+      .wrapper {
+        display: grid;
+        grid-template-rows: 50px 50px auto 50px;
+        max-width: 960px;
+        margin: 2em auto;
       }
     `}</style>
   </div>

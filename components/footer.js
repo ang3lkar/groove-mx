@@ -3,20 +3,19 @@ import Link from 'next/link'
 
 
 const Footer = () => (
-  <div>
+  <div className="footer-wrapper">
     <footer>
-      With love from Angelos, Theodore, Zaharenia
+      With ❤︎ from Angelos, Theodore, Zaharenia
     </footer>
 
     <style jsx>{`
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: red;
-        color: white;
-        text-align: center;
+      .footer-wrapper {
+        display: grid;
+        padding: 1.5rem
+      }
+
+      footer {
+        align-self: end
       `}</style>
 
   </div>

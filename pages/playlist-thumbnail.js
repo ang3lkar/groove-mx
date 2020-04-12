@@ -1,29 +1,26 @@
 import Link from 'next/link'
 
-export default function PlaylistThumbnail() {
+export default function PlaylistThumbnail(props) {
   return (
-    <Link href="/playlist">
+    <Link href='/playlists/[id]' as={`/playlists/${props.id}`}>
       <div className="preview">
-        <div className="cover-art-image"></div>
+        <div className="cover-art-image">
+          <img width="200" src={props.backgroundImage}></img>
+        </div>
         <div>
-          <p className="preview-header">Supermassive Song Hole</p>
-          <p className="preview-text">A bucket of songs</p>
+          <p className="preview-header">{props.title}</p>
+          <p className="preview-text">{props.subtitle}</p>
         </div>
 
         <style jsx>{`
         .preview {
-          width: 180px;
-          height: 240px;
-          padding: 5px;
-          border: 1px solid #333;
+          padding: 1.5rem;
+          border-radius: 1rem;
           cursor: pointer;
         }
 
         .cover-art-image {
-          width: 180px;
-          height: 180px;
-          background-image: url('https://raw.githubusercontent.com/ang3lkar/playlist-covers/master/supermassive-song-hole.jpg');
-          background-size: cover;
+          background-size: contain;
         }
 
         .preview-header {
@@ -33,7 +30,6 @@ export default function PlaylistThumbnail() {
 
         .preview-text {
           margin: 5px;
-          font: Verdana;
           font-size: 12px;
         }
       `}</style>
