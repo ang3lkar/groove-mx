@@ -19,13 +19,13 @@ export default function Playlist(props) {
         <div className="cover">
           <img src={imageUrl} />
           <p>{title}</p>
+          <p>Open on Spotify</p>
+          <p>#rock #instrumental #focus</p>
         </div>
 
         <div className="tracklist">
           <iframe
             src={`https://open.spotify.com/embed/playlist/${spotifyId}`}
-            width="500"
-            height="680"
             allowtransparency="true"
             allow="encrypted-media">
           </iframe>
@@ -49,8 +49,23 @@ export default function Playlist(props) {
           }
 
           .tracklist {
-            justify-self: end;
-            width: 500px;
+            overflow: hidden;
+            padding-top: 56.25%;
+            position: relative;
+          }
+
+          .tracklist iframe {
+             border: 0;
+             height: 100%;
+             left: 0;
+             position: absolute;
+             top: 0;
+             width: 100%;
+          }
+
+          /* 4x3 Aspect Ratio */
+          .iframe-container-4x3 {
+            padding-top: 75%;
           }
         `}</style>
       </div>

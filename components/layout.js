@@ -46,6 +46,7 @@ const Layout = (props) => (
         display: grid;
         grid-template-rows: 50px 50px auto 50px;
         max-width: 960px;
+        min-height: 100%;
         margin: 2em auto;
       }
     `}</style>
