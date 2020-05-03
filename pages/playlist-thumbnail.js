@@ -19,10 +19,6 @@ export default function PlaylistThumbnail(props) {
           cursor: pointer;
         }
 
-        .cover-art-image {
-          background-size: contain;
-        }
-
         .preview-header {
           font-size: 14px;
           font-weight: bold;

@@ -1,31 +1,28 @@
 import { useRouter } from 'next/router';
 import Layout from '../../components/layout';
-import config from '../../lib/config';
+import playlists from '../../playlists'
 
 export default function Playlist(props) {
   const router = useRouter()
   const { id } = router.query
 
   if (!id) return <p></p>
-
-  const spotifyId = config[id]['spotifyId']
-  const title = config[id]['title']
-  const imageUrl = config[id]['image']
+  const config = playlists.find(playlist => playlist.route == id);
 
   return (
     <Layout>
       <div className="playlist">
 
         <div className="cover">
-          <img src={imageUrl} />
-          <p>{title}</p>
+          <img src={`/static/${config.route}.jpg`} />
+          <p>{config.title}</p>
           <p>Open on Spotify</p>
-          <p>#rock #instrumental #focus</p>
+          <p>{config.tags}</p>
         </div>
 
         <div className="tracklist">
           <iframe
-            src={`https://open.spotify.com/embed/playlist/${spotifyId}`}
+            src={`https://open.spotify.com/embed/playlist/${config.spotifyId}`}
             allowtransparency="true"
             allow="encrypted-media">
           </iframe>
