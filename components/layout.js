@@ -44,10 +44,11 @@ const Layout = (props) => (
 
       .wrapper {
         display: grid;
-        grid-template-rows: 50px 50px auto 50px;
+        grid-template-rows: auto auto auto auto;
         max-width: 960px;
         min-height: 100%;
         margin: 2em auto;
+        row-gap: 30px;
       }
     `}</style>
   </div>

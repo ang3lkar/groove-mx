@@ -13,7 +13,6 @@ const Footer = () => (
         grid-row-start: 4;
         grid-row-end: 5;
         display: grid;
-        padding: 1.5rem
       }
 
       footer {

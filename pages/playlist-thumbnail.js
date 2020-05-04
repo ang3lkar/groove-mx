@@ -5,7 +5,7 @@ export default function PlaylistThumbnail(props) {
     <Link href='/playlists/[id]' as={`/playlists/${props.id}`}>
       <div className="preview">
         <div className="cover-art-image">
-          <img width="200" src={props.backgroundImage}></img>
+          <img width="250" src={props.backgroundImage}></img>
         </div>
         <div>
           <p className="preview-header">{props.title}</p>
@@ -14,8 +14,6 @@ export default function PlaylistThumbnail(props) {
 
         <style jsx>{`
         .preview {
-          padding: 1.5rem;
-          border-radius: 1rem;
           cursor: pointer;
         }
 
@@ -25,7 +23,6 @@ export default function PlaylistThumbnail(props) {
         }
 
         .preview-text {
-          margin: 5px;
           font-size: 12px;
         }
       `}</style>

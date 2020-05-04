@@ -30,10 +30,8 @@ export default function Playlist(props) {
 
         <style jsx>{`
           .playlist {
-            margin: 2em ;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 1rem;
           }
 
           .cover {

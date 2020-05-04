@@ -27,6 +27,7 @@ const Nav = () => (
         grid-template-columns: 100px 100px auto;
         padding: 1.5rem;
         margin: 0;
+        padding: 0;
       }
 
       .nav li {
