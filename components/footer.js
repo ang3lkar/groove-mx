@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Footer = () => (
   <div className="footer-wrapper">
     <footer>
-      With ❤︎ from Angelos, Theodore, Zaharenia
+      With ❤︎ from Angelos
     </footer>
 
     <style jsx>{`
