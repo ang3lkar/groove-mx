@@ -18,12 +18,12 @@ export default function Header() {
         <p>Curated playlists for the music bourgeoisie</p>
       </div>
 
+      <div></div>
+
       <style jsx>{`
         .header {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          padding: 2px;
-          justify-content: stretch;
         }
 
         .logo {
@@ -35,7 +35,7 @@ export default function Header() {
 
         .subtitle{
           font-style: italic;
-          align-self: center;
+          align-self: end;
         }
       `}</style>
     </div>
