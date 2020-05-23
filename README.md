@@ -1,15 +1,21 @@
 # Groove.mx
 
+## Installation
 
-## How to run
+```
+npm run install
+```
+
+## How to run locally
 ```
 npm run dev
 ```
 
 ## How we add playlists
 
-Thumbnails
+Add an entry in `playlists.js`. The app takes care after that.
 
-## TODOS
-
--[ ] Have friendly URLS (eg: https://groove.mx/playlists/supermassive-song-hole)
+Don't forget to download their thumbnails:
+```sh
+npm run images
+```

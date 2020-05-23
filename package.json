@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "babel-node generate-thumbnails.js"
+    "images": "babel-node scripts/generate-thumbnails.js"
   },
   "dependencies": {
     "next": "9.3.2",

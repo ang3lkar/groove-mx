@@ -1,7 +1,7 @@
 import fs from 'fs';
 import request from 'request';
 import SpotifyWebApi from 'spotify-web-api-node';
-import playlists from './playlists';
+import playlists from '../playlists';
 
 var spotifyApi = new SpotifyWebApi({
   clientId: '4999d98d885d42b68d2dc78a4dfeafd1',
