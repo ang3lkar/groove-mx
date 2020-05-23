@@ -5,7 +5,7 @@ const playlists = [
     route: "music-from-the-basement",
     spotifyId: "5evN3B2AVeLtOPVmEzVV1s",
     title: "Music from the basement",
-    subtitle: "Rough rock",
+    subtitle: "Basement rock",
     featured: true
   },
   {
@@ -20,6 +20,13 @@ const playlists = [
     spotifyId: "5s9qGXBeh64UDkeICKHkE7",
     title: "Eastern Winds",
     subtitle: "Sounds from the far east.",
+    featured: true
+  },
+  {
+    route: "modern-noir",
+    spotifyId: "2WbzoO6tKedAL3pvnhIPoY",
+    title: "Modern Noir",
+    subtitle: "Takes place in a dark bar of 00s",
     featured: true
   }
 ];

@@ -5,11 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prepare": "babel-node generate-thumbnails.js"
   },
   "dependencies": {
     "next": "9.3.2",
     "react": "16.9.0",
     "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.6",
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "7.9.6",
+    "request": "2.88.2",
+    "spotify-web-api-node": "4.0.0"
   }
 }
