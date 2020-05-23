@@ -28,6 +28,20 @@ const playlists = [
     title: "Modern Noir",
     subtitle: "Takes place in a dark bar of 00s",
     featured: true
+  },
+  {
+    route: "join-me-in-my-breakfast-nook",
+    spotifyId: "1vfW7IcHgiNJIFpUKj9FU9",
+    title: "Join me in my breakfast nook",
+    subtitle: "Relaxed, happy music to start a wonderful day",
+    featured: true
+  },
+  {
+    route: "cooking",
+    spotifyId: "4DsrrE0tPWNFnuX900yYQd",
+    title: "Cooking",
+    subtitle: "Cream fraiche on top.",
+    featured: true
   }
 ];
 
