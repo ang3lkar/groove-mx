@@ -2,10 +2,17 @@ const githubPrefix = "https://raw.githubusercontent.com/ang3lkar/playlist-covers
 
 const playlists = [
   {
+    route: "sexitude",
+    spotifyId: "4NWBEUSqrRnJPYrauu5xFA",
+    title: "Sexitude",
+    subtitle: "This is not music to make sweet love.",
+    featured: true
+  },
+  {
     route: "music-from-the-basement",
     spotifyId: "5evN3B2AVeLtOPVmEzVV1s",
     title: "Music from the basement",
-    subtitle: "Basement rock",
+    subtitle: "Mom banging the door to keep it low.",
     featured: true
   },
   {
@@ -26,14 +33,14 @@ const playlists = [
     route: "modern-noir",
     spotifyId: "2WbzoO6tKedAL3pvnhIPoY",
     title: "Modern Noir",
-    subtitle: "Takes place in a dark bar of 00s",
+    subtitle: "Takes place in a dark bar of 00s.",
     featured: true
   },
   {
     route: "join-me-in-my-breakfast-nook",
     spotifyId: "1vfW7IcHgiNJIFpUKj9FU9",
     title: "Join me in my breakfast nook",
-    subtitle: "Relaxed, happy music to start a wonderful day",
+    subtitle: "Relaxed, happy music to start a wonderful day.",
     featured: true
   },
   {
@@ -41,6 +48,13 @@ const playlists = [
     spotifyId: "4DsrrE0tPWNFnuX900yYQd",
     title: "Cooking",
     subtitle: "Cream fraiche on top.",
+    featured: true
+  },
+  {
+    route: "off-radio",
+    spotifyId: "1VyqjoYYO0rLcU9QCZHN4m",
+    title: "OffRadio.gr",
+    subtitle: "Handpicked, 100% organic refreshments from Thessaloniki's favorite online radio station.",
     featured: true
   }
 ];

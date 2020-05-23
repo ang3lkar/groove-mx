@@ -20,10 +20,6 @@ const Layout = (props) => (
         box-sizing: border-box;
       }
 
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      }
-
       ul {
         padding: 0;
       }
@@ -49,6 +45,7 @@ const Layout = (props) => (
         min-height: 100%;
         margin: 2em auto;
         row-gap: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
       }
     `}</style>
   </div>
