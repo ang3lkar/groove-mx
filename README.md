@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-npm run install
+yarn
 ```
 
 ## How to run locally
@@ -15,7 +15,7 @@ npm run dev
 
 Add an entry in `playlists.js`. The app takes care after that.
 
-Don't forget to download their thumbnails:
+Don't forget to download their images:
 ```sh
 npm run images
 ```
