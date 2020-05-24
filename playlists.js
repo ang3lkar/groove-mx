@@ -1,5 +1,3 @@
-const githubPrefix = "https://raw.githubusercontent.com/ang3lkar/playlist-covers/master"
-
 const playlists = [
   {
     route: "sexitude",
