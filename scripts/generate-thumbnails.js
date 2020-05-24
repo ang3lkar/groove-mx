@@ -4,8 +4,8 @@ import SpotifyWebApi from 'spotify-web-api-node';
 import playlists from '../playlists';
 
 var spotifyApi = new SpotifyWebApi({
-  clientId: '4999d98d885d42b68d2dc78a4dfeafd1',
-  clientSecret: '3da85f0b1f394261846ef522c368ae91'
+  clientId: process.env.GROOVE_MX_SPOTIFY_CLIENT_ID,
+  clientSecret: process.env.GROOVE_MX_SPOTIFY_CLIENT_SECRET
 });
 
 var download = function(uri, filename, callback){
