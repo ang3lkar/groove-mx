@@ -9,14 +9,19 @@ export default function Playlist(props) {
   if (!id) return <p></p>
   const config = playlists.find(playlist => playlist.route == id);
 
+  const openOnSpotify = () => {
+    window.open(`spotify:playlist:${config.spotifyId}`);
+  }
+
   return (
     <Layout>
       <div className="playlist">
 
         <div className="cover">
           <img src={`/static/${config.route}.jpg`} />
-          <p>{config.title}</p>
-          <p>Open on Spotify</p>
+          <h2>{config.title}</h2>
+          <p>{config.subtitle}</p>
+          <div className="spotify-button" onClick={openOnSpotify}>Open on Spotify</div>
           <p>{config.tags}</p>
         </div>
 
@@ -24,6 +29,7 @@ export default function Playlist(props) {
           <iframe
             src={`https://open.spotify.com/embed/playlist/${config.spotifyId}`}
             allowtransparency="true"
+            width="700"
             allow="encrypted-media">
           </iframe>
         </div>
@@ -31,11 +37,29 @@ export default function Playlist(props) {
         <style jsx>{`
           .playlist {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 320px auto;
           }
 
-          .cover {
+          .spotify-button {
+            margin-top: 20px;
+            line-height: 32px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: #1db954;
+            border-radius: 35px;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 2px;
+            width: 90%;
+            border: 0;
+            text-shadow: none;
+          }
 
+          .spotify-button:hover {
+            background: #1ed65e;
           }
 
           .cover img {
