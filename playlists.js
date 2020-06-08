@@ -31,7 +31,7 @@ const playlists = [
     route: "modern-noir",
     spotifyId: "2WbzoO6tKedAL3pvnhIPoY",
     title: "Modern Noir",
-    subtitle: "Takes place in a dark bar of 00s.",
+    subtitle: "Takes place in a dark bar of the 00s.",
     featured: true
   },
   {
@@ -45,7 +45,7 @@ const playlists = [
     route: "cooking",
     spotifyId: "4DsrrE0tPWNFnuX900yYQd",
     title: "Cooking",
-    subtitle: "Cream fraiche on top.",
+    subtitle: "Don't forget to put some cream fraiche on top.",
     featured: true
   },
   {
