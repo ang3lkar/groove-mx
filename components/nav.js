@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Nav = () => (
     <nav className="nav">
       <ul>
-        <li>
+        {/* <li>
           <Link href="/playlists">
             <a>Playlists</a>
           </Link>
@@ -14,7 +14,7 @@ const Nav = () => (
           <Link href="/about">
             <a>About us</a>
           </Link>
-        </li>
+        </li> */}
       </ul>
 
       <style jsx>{`
