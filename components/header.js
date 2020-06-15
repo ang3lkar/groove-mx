@@ -5,6 +5,16 @@ export default function Header() {
   return (
     <div className="header">
       <Head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169420141-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-169420141-1');
+        </script>
+
         <title>Groove.mx</title>
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
 
