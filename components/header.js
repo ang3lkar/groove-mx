@@ -24,7 +24,7 @@ export default function Header() {
         <meta property="og:description" content="Curated playlists for the music bourgeoisie." />
         <meta property="og:image" content="http://groove.mx/thumbnail.jpg" />
 
-        <link rel="shortcut icon" href="/static/favicon.ico" />
+        <link rel="shortcut icon" href="/static/images/favicon.ico" />
       </Head>
 
       <Link href="/">
