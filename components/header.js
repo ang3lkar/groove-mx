@@ -7,6 +7,12 @@ export default function Header() {
       <Head>
         <title>Groove.mx</title>
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
+
+        <meta name="twitter:card" content="summary" />
+        <meta property="og:url" content="https://groove.mx" />
+        <meta property="og:title" content="Groove.Mx" />
+        <meta property="og:description" content="Curated playlists for the music bourgeoisie." />
+
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
 
@@ -15,7 +21,7 @@ export default function Header() {
       </Link>
 
       <div className="subtitle">
-        <p>Curated playlists for the music bourgeoisie</p>
+        <p>Curated playlists for the music bourgeoisie.</p>
       </div>
 
       <div></div>
