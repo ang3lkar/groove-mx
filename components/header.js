@@ -10,7 +10,7 @@ export default function Header() {
 
         <meta name="twitter:card" content="summary" />
         <meta property="og:url" content="https://groove.mx" />
-        <meta property="og:title" content="GROOVE.MX" />
+        <meta property="og:title" content="groove.mx" />
         <meta property="og:description" content="Playlists for the music bourgeoisie." />
         <meta property="og:image" content="http://groove.mx/thumbnail.jpg" />
 
