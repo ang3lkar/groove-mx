@@ -12,7 +12,7 @@ playlists.forEach(playlist => {
         id={playlist.route}
         title={playlist.title}
         subtitle={playlist.subtitle}
-        backgroundImage={`static/${playlist.route}.jpg`}
+        backgroundImage={`/static/images/${playlist.route}.jpg`}
       ></PlaylistThumbnail>
     )
   }

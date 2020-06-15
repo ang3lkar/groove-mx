@@ -18,7 +18,7 @@ export default function Playlist(props) {
       <div className="playlist">
 
         <div className="cover">
-          <img src={`/static/${config.route}.jpg`} />
+          <img src={`/static/images/${config.route}.jpg`} />
           <h2>{config.title}</h2>
           <p>{config.subtitle}</p>
           <div className="spotify-button" onClick={openOnSpotify}>Open on Spotify</div>

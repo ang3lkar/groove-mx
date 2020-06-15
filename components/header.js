@@ -12,7 +12,7 @@ export default function Header() {
         <meta property="og:url" content="https://groove.mx" />
         <meta property="og:title" content="GROOVE.MX" />
         <meta property="og:description" content="Playlists for the music bourgeoisie." />
-        <meta property="og:image" content="http://groove.mx/images/thumbnail.jpg" />
+        <meta property="og:image" content="http://groove.mx/thumbnail.jpg" />
 
         <link rel="shortcut icon" href="/static/favicon.ico" />
       </Head>
