@@ -1,3 +1,4 @@
+import {useEffect} from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../../components/layout';
 import playlists from '../../playlists'
@@ -12,6 +13,10 @@ export default function Playlist(props) {
   const openOnSpotify = () => {
     window.open(`spotify:playlist:${config.spotifyId}`);
   }
+
+  useEffect(() => {
+    ga('send', 'pageview', document.location);
+  });
 
   return (
     <Layout>
@@ -29,8 +34,7 @@ export default function Playlist(props) {
           <iframe
             src={`https://open.spotify.com/embed/playlist/${config.spotifyId}`}
             allowtransparency="true"
-            width="700"
-            allow="encrypted-media">
+            width="700">
           </iframe>
         </div>
 
