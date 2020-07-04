@@ -30,11 +30,13 @@ export default function Playlist(props) {
 
         <div className="cover">
           <img src={`/static/images/${config.route}.jpg`} />
-          <h2>{config.title}</h2>
-          <p>{config.subtitle}</p>
+          <p className="preview-header">{config.title}</p>
+          <p className="preview-text">{config.subtitle}</p>
           <div className="spotify-button" onClick={openOnSpotify}>Open on Spotify</div>
           <p>{config.tags}</p>
         </div>
+
+        <div></div>
 
         <div className="tracklist">
           <iframe
@@ -47,7 +49,17 @@ export default function Playlist(props) {
         <style jsx>{`
           .playlist {
             display: grid;
-            grid-template-columns: 320px auto;
+            grid-template-columns: 320px 80px auto;
+          }
+
+          .preview-header {
+            font-size: 14px;
+            font-weight: bold;
+          }
+
+          .preview-text {
+            color: gray;
+            font-size: 14px;
           }
 
           .spotify-button {
