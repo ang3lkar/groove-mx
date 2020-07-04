@@ -32,7 +32,7 @@ spotifyApi.clientCredentialsGrant().then(
 
         // Get image
         const imageName = playlist.route + '.jpg';
-        const imagePath = 'static/' + imageName;
+        const imagePath = 'public/static/images/' + imageName;
         const imageUrl = data.images[0].url;
 
         download(imageUrl, imagePath, function(){

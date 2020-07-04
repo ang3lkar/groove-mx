@@ -7,6 +7,13 @@ const playlists = [
     featured: true
   },
   {
+    route: "hot-breeze",
+    spotifyId: "3lN4mXfMY8qZfoU6cZ1RXK",
+    title: "Hot breeze",
+    subtitle: "Music for an empty beach bar around late noon.",
+    featured: true
+  },
+  {
     route: "music-from-the-basement",
     spotifyId: "5evN3B2AVeLtOPVmEzVV1s",
     title: "Music from the basement",
