@@ -15,7 +15,7 @@ export default function Playlist(props) {
       hitType: 'event',
       eventCategory: 'OpenOnSpotify',
       eventAction: 'open',
-      eventLabel: config.spotifyId
+      eventLabel: config.route
     });
     window.open(`spotify:playlist:${config.spotifyId}`);
   }
