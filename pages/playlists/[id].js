@@ -11,6 +11,12 @@ export default function Playlist(props) {
   const config = playlists.find(playlist => playlist.route == id);
 
   const openOnSpotify = () => {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'OpenOnSpotify',
+      eventAction: 'open',
+      eventLabel: config.spotifyId
+    });
     window.open(`spotify:playlist:${config.spotifyId}`);
   }
 
