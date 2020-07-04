@@ -22,7 +22,7 @@ playlists.forEach(playlist => {
 export default function Main() {
 
   useEffect(() => {
-    ga('send', 'pageview', document.location);
+    ga('send', 'pageview', document.location.pathname);
   });
 
   return (
