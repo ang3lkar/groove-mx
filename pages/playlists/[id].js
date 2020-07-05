@@ -36,8 +36,6 @@ export default function Playlist(props) {
           <p>{config.tags}</p>
         </div>
 
-        <div></div>
-
         <div className="tracklist">
           <iframe
             src={`https://open.spotify.com/embed/playlist/${config.spotifyId}`}
@@ -49,7 +47,7 @@ export default function Playlist(props) {
         <style jsx>{`
           .playlist {
             display: grid;
-            grid-template-columns: 320px 80px auto;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           }
 
           .preview-header {
@@ -75,7 +73,7 @@ export default function Playlist(props) {
             text-transform: uppercase;
             color: white;
             letter-spacing: 2px;
-            width: 90%;
+            width: 300px;
             border: 0;
             text-shadow: none;
           }
