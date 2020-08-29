@@ -58,6 +58,7 @@ export default function Playlist(props) {
           .preview-text {
             color: gray;
             font-size: 14px;
+            width: 80%;
           }
 
           .spotify-button {
