@@ -1,5 +1,12 @@
 const playlists = [
   {
+    route: "as-perimenoun-oi-gynaikes",
+    spotifyId: "0OVVDFVkx97kfgGr2AJAXr",
+    title: "Ας περιμένουν οι γυναίκες",
+    subtitle: "Και τι μουσική προτιμά ο κος Πάνος; Προτιμά κύριο Μελά, κύριο Σφακιανάκη, κύριο Καρρά. Διότι του συνέβη κάτι που επέδρασε στην ψυχή του.",
+    featured: true
+  },
+  {
     route: "sexitude",
     spotifyId: "4NWBEUSqrRnJPYrauu5xFA",
     title: "Sexitude",
