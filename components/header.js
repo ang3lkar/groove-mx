@@ -6,7 +6,6 @@ export default function Header(props) {
   const og_props = props.open_graph || {};
 
   const normalizeDescription = (desc) => {
-    console.log(desc)
     if (typeof desc == "string") {
       return desc;
     } else { // it's an array

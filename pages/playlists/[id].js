@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Layout from '../../components/layout';
 import playlists from '../../playlists'
 
-export default function Playlist(props) {
+const Playlist = (props) => {
   const router = useRouter()
   const { id } = router.query
 
@@ -119,3 +119,24 @@ export default function Playlist(props) {
     </Layout>
   );
 }
+
+// https://stackoverflow.com/questions/62025857/server-side-render-dynamic-page-based-on-route-param
+export const getStaticPaths = async () => {
+  const paths = playlists.map((item) => {
+     return { params: { id: item.route } }
+  });
+
+  // we are disabling fallback because we know all the paths ahead of time
+  return { paths, fallback: false }
+}
+
+// This function gets called at build time on server-side.
+export async function getStaticProps(context) {
+  return {
+    props: {
+      id: context.params.id
+    },
+  }
+}
+
+export default Playlist;
