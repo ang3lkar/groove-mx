@@ -6,7 +6,7 @@ import Header from './header'
 
 const Layout = (props) => (
   <div className="wrapper">
-    <Header></Header>
+    <Header open_graph={props.open_graph}></Header>
 
     <Nav></Nav>
 

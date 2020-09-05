@@ -2,7 +2,24 @@ import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
 
-export default function Header() {
+export default function Header(props) {
+  const og_props = props.open_graph || {};
+
+  const normalizeDescription = (desc) => {
+    console.log(desc)
+    if (typeof desc == "string") {
+      return desc;
+    } else { // it's an array
+      const arr = [];
+      desc.forEach(item => {
+        if (typeof item == "string") {
+          arr.push(item);
+        }
+      });
+      return arr.join(" ");
+    }
+  }
+
   return (
     <div className="header">
       <Head>
@@ -23,10 +40,10 @@ export default function Header() {
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
 
         <meta name="twitter:card" content="summary" />
-        <meta property="og:url" content="https://groove.mx" />
-        <meta property="og:title" content="groove.mx" />
-        <meta property="og:description" content="Curated playlists for the music bourgeoisie." />
-        <meta property="og:image" content="http://groove.mx/thumbnail.jpg" />
+        <meta property="og:url" content={og_props.url ? `https://groove.mx/playlists/${og_props.url}` : "https://groove.mx"} />
+        <meta property="og:title" content={og_props.title || "groove.mx"} />
+        <meta property="og:description" content={og_props.description ? normalizeDescription(og_props.description) : "Curated playlists for the music bourgeoisie."} />
+        <meta property="og:image" content={og_props.image ? `https://groove.mx/static/images/${og_props.image}.jpg` : "https://groove.mx/thumbnail.jpg"} />
 
         <link rel="shortcut icon" href="/static/images/favicon.ico" />
       </Head>
