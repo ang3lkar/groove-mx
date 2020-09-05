@@ -39,7 +39,8 @@ export default function Header(props) {
         <title>Groove.mx</title>
         <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content={og_props.url ? `https://groove.mx/playlists/${og_props.url}` : "https://groove.mx"} />
         <meta property="og:title" content={og_props.title || "groove.mx"} />
         <meta property="og:description" content={og_props.description ? normalizeDescription(og_props.description) : "Curated playlists for the music bourgeoisie."} />

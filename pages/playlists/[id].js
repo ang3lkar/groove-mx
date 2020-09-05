@@ -31,10 +31,6 @@ export default function Playlist(props) {
     ga('send', 'pageview', document.location.pathname);
   });
 
-  // <meta property="og:url" content="https://groove.mx" />
-  // <meta property="og:title" content="groove.mx" />
-  // <meta property="og:description" content="Curated playlists for the music bourgeoisie." />
-  // <meta property="og:image" content="http://groove.mx/thumbnail.jpg" />
   return (
     <Layout open_graph={open_graph}>
       <div className="playlist">
