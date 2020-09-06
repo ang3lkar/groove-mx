@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Footer = () => (
   <div className="footer-wrapper">
     <footer>
-      With ❤︎ from <a href="https://twitter.com/ang3lkar" target="_blank">Angelos</a> and <a href="https://twitter.com/sugarenia" target="_blank">Sugarenia</a>.
+      With ♥ from <a href="https://twitter.com/ang3lkar" target="_blank">Angelos</a> and <a href="https://twitter.com/sugarenia" target="_blank">Sugarenia</a>.
     </footer>
 
     <style jsx>{`
