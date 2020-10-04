@@ -1,5 +1,12 @@
 const playlists = [
   {
+    route: "late-and-tired",
+    spotifyId: "4OBpX1W4VYeHeGpb1nE4rx",
+    title: "Late and tired",
+    subtitle: "It's Sunday night, all you want is to relax.",
+    featured: true
+  },
+  {
     route: "as-perimenoun-oi-gynaikes",
     spotifyId: "0OVVDFVkx97kfgGr2AJAXr",
     title: "Ας περιμένουν οι γυναίκες",
