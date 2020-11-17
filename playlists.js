@@ -1,5 +1,12 @@
 const playlists = [
   {
+    route: "new-nostalgia",
+    spotifyId: "3jZnR6l1kAJHGGPnLGBim4",
+    title: "New nostalgia",
+    subtitle: "It's basically the past in brand new wrapping paper.",
+    featured: true
+  },
+  {
     route: "late-and-tired",
     spotifyId: "4OBpX1W4VYeHeGpb1nE4rx",
     title: "Late and tired",
