@@ -1,5 +1,12 @@
 const playlists = [
   {
+    route: "a-very-hipster-christmas",
+    spotifyId: "0u3yacQHj5Fg3jE13Ax9xs",
+    title: "A very hipster Christmas",
+    subtitle: "No more soul-less listening to 'All I want for Christmas is you' and 'Last Christmas'.",
+    featured: true
+  },
+  {
     route: "new-nostalgia",
     spotifyId: "3jZnR6l1kAJHGGPnLGBim4",
     title: "New nostalgia",
